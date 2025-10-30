@@ -321,29 +321,30 @@ body {
     color: white; 
 }
 .page-footer {
-    position: absolute; /* Đưa footer ra khỏi luồng trang thông thường */
-    bottom: 20px;       /* Cách đáy 20px */
-    left: 0;            /* Căn trái */
-    right: 0;           /* Căn phải (kết hợp left:0 và right:0 để nó tự động căn giữa theo chiều ngang) */
-
     text-align: center;
-    padding: 10px 20px;
-    border-top: 1px solid #444; /* Đường kẻ màu tối hơn cho nền đen */
+    padding: 20px;
+    margin-top: 20px; /* Tạo khoảng cách với nút "Trang Chủ" */
+    border-top: 1px solid #444; /* Đường kẻ phân cách trên nền tối */
+    color: #888; /* Màu chữ cho dấu gạch nối */
 }
 
 .footer-links {
     margin-bottom: 10px;
 }
+
 .footer-links:last-child {
     margin-bottom: 0;
 }
+
 .page-footer a {
-    color: #007bff;
+    color: #0084ff; /* Màu xanh sáng hơn trên nền tối */
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     margin: 0 5px;
 }
+
 .page-footer a:hover {
     text-decoration: underline;
+}underline;
 }
