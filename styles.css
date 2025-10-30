@@ -1,0 +1,349 @@
+/* ======================================================= */
+/* 1. Global Reset and Body Styling */
+/* ======================================================= */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5; /* Nền xám nhạt cho trang chính */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container chính giới hạn chiều rộng */
+.profile-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: white; /* Nền trắng cho trang chính */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ======================================================= */
+/* 2. Styles for Main Profile Page (index.html) */
+/* ======================================================= */
+
+/* --- Banner --- */
+.header-banner {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    
+}
+.header-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Profile Info Section --- */
+.profile-info-section {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+}
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    object-fit: cover;
+}
+.name-roles {
+    color: white; /* Màu chữ trên banner */
+}
+.name-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.name-row h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.verified-icon {
+    color: #007bff;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.role {
+    font-size: 14px;
+    font-weight: 500;
+}
+.role.developer { color: orange; margin-right: 5px; }
+.role.designer { color: lightgreen; margin-left: 5px; }
+
+/* --- Contact Button --- */
+.contact-button-link {
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.contact-button {
+    background-color: #e0f0ff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.contact-button .main-text {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #007bff;
+}
+.contact-button .sub-text {
+    display: block;
+    font-size: 12px;
+    color: gray;
+    margin-top: 2px;
+}
+
+/* --- Link List Section --- */
+.section-header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.link-list-container {
+    background-color: white;
+    margin: 0 20px 30px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.link-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+.link-item:last-child {
+    border-bottom: none;
+}
+.link-item:hover {
+    background-color: #f7f7f7;
+}
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 20px;
+}
+/* Icon Background Colors */
+.payment-bg { background-color: rgba(40, 167, 69, 0.1); }
+.facebook-bg { background-color: rgba(59, 89, 152, 0.1); }
+.zalo-bg { background-color: rgba(0, 153, 255, 0.1); }
+/* Icon Font Colors */
+.payment-icon { color: #28a745; }
+.facebook-icon { color: #3b5998; }
+.zalo-icon { color: #0099ff; }
+/* Icon Image */
+.zalo-image-icon {
+    width: 28px;   
+    height: 28px;  
+    object-fit: contain; 
+}
+.link-text-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.link-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.link-subtitle {
+    font-size: 12px;
+    color: gray;
+    margin-top: 2px;
+}
+.open-btn {
+    color: orange;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* ======================================================= */
+/* 3. Styles for Payment Details Page (payment-details.html) */
+/* ======================================================= */
+
+/* --- Profile Header in Detail Page --- */
+.payment-profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.profile-avatar-detail {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white; 
+    margin-right: 15px;
+    object-fit: cover;
+}
+.name-roles-detail h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.verified-icon-detail {
+    color: #007bff;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* --- Role Badges (Khung viền vai trò) --- */
+.role-badges-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.role-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background-color: #3f3930;
+    border: 1px solid #585047;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Bank Card Styles --- */
+.section-header-dark {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.bank-card {
+    position: relative;
+    margin: 15px 20px;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #333333;
+}
+.bank-card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    z-index: 1;
+}
+.bank-content {
+    position: relative;
+    z-index: 2;
+}
+.bank-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.bank-card p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #cccccc;
+}
+.copy-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    z-index: 3;
+}
+.home-button-wrapper {
+    padding: 20px;
+    text-align: center;
+}
+.home-button {
+    display: block;
+    padding: 15px;
+    background-color: #E6A247;
+    color: #222;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px #b9843c;
+}
+
+/* ======================================================= */
+/* 4. Dark Theme Overrides for Payment Page */
+/* (Khi thẻ <body> có class="dark-page") */
+/* ======================================================= */
+.dark-page {
+    background-color: #202020;
+}
+.dark-page .profile-container {
+    background-color: #202020;
+    box-shadow: none;
+}
+.dark-page .section-header-dark {
+    color: white;
+}
+.dark-page .name-roles-detail h1 {
+    color: white; 
+}
+.page-footer {
+    position: absolute; /* Đưa footer ra khỏi luồng trang thông thường */
+    bottom: 20px;       /* Cách đáy 20px */
+    left: 0;            /* Căn trái */
+    right: 0;           /* Căn phải (kết hợp left:0 và right:0 để nó tự động căn giữa theo chiều ngang) */
+
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 1px solid #444; /* Đường kẻ màu tối hơn cho nền đen */
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+.footer-links:last-child {
+    margin-bottom: 0;
+}
+.page-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 5px;
+}
+.page-footer a:hover {
+    text-decoration: underline;
+}
