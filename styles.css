@@ -321,14 +321,17 @@ body {
     color: white; 
 }
 .page-footer {
-    position: absolute; /* Đưa footer ra khỏi luồng trang thông thường */
-    bottom: 20px;       /* Cách đáy 20px */
-    left: 0;            /* Căn trái */
-    right: 0;           /* Căn phải (kết hợp left:0 và right:0 để nó tự động căn giữa theo chiều ngang) */
-
     text-align: center;
-    padding: 10px 20px;
-    border-top: 1px solid #444; /* Đường kẻ màu tối hơn cho nền đen */
+    padding: 20px;
+    margin-top: 30px; /* Tăng khoảng cách với nội dung bên trên */
+    border-top: 1px solid #eee;
+    width: 100%;
+    box-sizing: border-box; /* Quan trọng để padding không phá vỡ layout */
+}
+
+/* Ghi đè màu cho chế độ tối */
+body.dark-mode .page-footer {
+    border-top-color: #444;
 }
 
 .footer-links {
